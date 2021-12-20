@@ -1,0 +1,19 @@
+-- begin_signature
+-- BancoRegistro
+-- end_signature
+WIDTH=4;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	1000;
+	6 :	0110;
+	5 :	0100;
+	4 :	0101;
+	3 :	0010;
+	2 :	1101;
+	1 :	0000;
+	0 :	1010;
+END;
