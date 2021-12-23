@@ -1,3 +1,32 @@
-# lab04 Diseño de banco de Registro
+# Lab04 Diseño de banco de Registro
 
-Escriba la documentación respectiva 
+* Ana Isabella Goyeneche Fonseca 1.192.793.310
+* Diego Andrés Quintero Rois
+* Oscar Santiago Suarez Aguilar 1.003.822.596
+
+# Generalidades de un Banco de Registro.
+
+Un banco de registros es un conjunto de elementos tipo registro;  su vez, los registros son dispositivos digitales donde se obtiene almacenamiento temporal. Dado que la memoria y el desplazamiento de información son sus características básicas, los registros son circuitos secuenciales constituidos por flip-flops.
+
+Los bancos de registro son de gran importancia y entre sus características más importantes es que mediante señales de control permiten el almacenamiento y recuperación de información; es decir, que cada registro sea escrito o leido.  Por lo generar el banco de registro tiene un puerto de salida de datos y uno de entrada. Dependiedo de la aplicación el banco de registro debe permite la lectura y escritura simultánea de varios registros. 
+
+# Descripción y alcance del banco a implementar.
+
+En el desarrollo a continuación presentado se pretende alcanzar un banco implementado en la FPGA que:
+
+* Tenga 8 registros de 4 bits Read and Write.
+* Permita la lectura de 2 registros simultáneamente,
+* Permita la escritura de 1 registro, acorde a la señal de control regwrite
+* Cuente con señal de rst, la cual ponga todos los registros en un valor conocido.
+* Permita visualizar la información, en al menos dos display de 7 segmentos (información de cada registro leído.
+* Haga el ingreso de la información por medio de los interruptores dispuestos en la tarjeta de desarrollo.
+* Parametrizar el tamaño de palabra de cada registro y la cantidad de registros.
+* Pre cargar el banco de registro con información. Usar $readmenh.
+
+Es decir, el trabajo del equipo de diseño consiste en crear un archivo tipo ¨Top¨ que permita integrar los archivos previamente dados en el paquete de trabajo que permitan hacer la implementación en forma de lenguaje de descripción de Hardware; en el cual se instancian tanto el banco de registros como el display. Adicionalmente se mustran los resultados del diseño tanto por TestBench como en la implementación física.
+
+A continuación, se muestran los pantallazos del código comentado en los cuales se explica brevemente el funcionamiento del banco de registro, y en los cuales se muestra como se cumplen los requisitos de diseño solicitados.
+
+![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo3-2021-2/blob/master/figs/BancoRegistro1.png)
+
+
