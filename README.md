@@ -39,7 +39,11 @@ Como se habia mencionado anteriormente, el módulo "Top" del proyecto es el enca
 
 ![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/BancoRegistroTop.png)
 
-![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/EsquemaTop.png)
+![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/Esquema.png)
 
 # Resultados del TestBench, incluyendo muestra de funcionamiento de Precarga.
-A continuación, teniendo en cuenta el archivo ¨Reg.txt¨ es posible mediante el 
+ //Explicación y pantallazo del código testbench explicando que hace cada sección comentada.
+ //Muestra de funcionamiento de testbench y análisis.
+ 
+ # Video Demostrativo
+ //Adjunto video demostrativo mostrando cada función (Lectura, escritura, reseteo)
