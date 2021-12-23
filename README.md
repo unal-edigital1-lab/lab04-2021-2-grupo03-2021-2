@@ -42,3 +42,4 @@ Como se habia mencionado anteriormente, el módulo "Top" del proyecto es el enca
 ![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/EsquemaTop.png)
 
 # Resultados del TestBench, incluyendo muestra de funcionamiento de Precarga.
+A continuación, teniendo en cuenta el archivo ¨Reg.txt¨ es posible mediante el 
