@@ -25,8 +25,12 @@ En el desarrollo a continuación presentado se pretende alcanzar un banco implem
 
 Es decir, el trabajo del equipo de diseño consiste en crear un archivo tipo ¨Top¨ que permita integrar los archivos previamente dados en el paquete de trabajo que permitan hacer la implementación en forma de lenguaje de descripción de Hardware; en el cual se instancian tanto el banco de registros como el display. Adicionalmente se mustran los resultados del diseño tanto por TestBench como en la implementación física.
 
+# Desarrollo del diseño.
+
 A continuación, se muestran los pantallazos del código comentado en los cuales se explica brevemente el funcionamiento del banco de registro, y en los cuales se muestra como se cumplen los requisitos de diseño solicitados.
 
-![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo3-2021-2/blob/master/figs/BancoRegistro1.png)
+![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/BancoRegistro1.png)
 
-Referente a los cambios implementados en los archivos ¨BCDtoSSeg.v¨ y ¨display.v¨ se puede argumentar que fueron menores y además solo se hicieron con el fin de hacer visualización 
+![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/BancoRegistro2.png)
+
+Referente a los cambios implementados en los archivos ¨BCDtoSSeg.v¨ y ¨display.v¨ se puede argumentar que fueron menores y además solo se hicieron con el fin de hacer visualización dinámica en dos display y no en 4 como anteriormente se había implementado; por lo cual no se adjutan pantallazos y para mayor información se debe remitir al código de ésta carpeta.
