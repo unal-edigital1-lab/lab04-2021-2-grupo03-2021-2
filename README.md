@@ -33,4 +33,12 @@ A continuación, se muestran los pantallazos del código comentado en los cuales
 
 ![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/BancoRegistro2.png)
 
-Referente a los cambios implementados en los archivos ¨BCDtoSSeg.v¨ y ¨display.v¨ se puede argumentar que fueron menores y además solo se hicieron con el fin de hacer visualización dinámica en dos display y no en 4 como anteriormente se había implementado; por lo cual no se adjutan pantallazos y para mayor información se debe remitir al código de ésta carpeta.
+Referente a los cambios implementados en los archivos ¨BCDtoSSeg.v¨ y ¨display.v¨ se puede argumentar que fueron menores y además solo se hicieron con el fin de hacer visualización dinámica de los dos datos de salida en dos display y no en 4 como anteriormente se había implementado; por lo cual no se adjutan pantallazos y para mayor información se debe remitir al código de ésta carpeta.
+
+Como se habia mencionado anteriormente, el módulo "Top" del proyecto es el encargado de unir los diferentes elementos que se encargan tanto del manejo de la información como de su proyección, por eso se muestra a continuación el código desarrollado y sus respectivos comentarios. Adicionalmente se incluye un esquema del funcionamiento del módulo y sus conexiones para facilitar el entendimiento.
+
+![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/BancoRegistroTop.png)
+
+![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/EsquemaTop.png)
+
+# Resultados del TestBench, incluyendo muestra de funcionamiento de Precarga.
