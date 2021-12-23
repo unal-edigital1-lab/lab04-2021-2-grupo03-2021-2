@@ -29,4 +29,4 @@ A continuación, se muestran los pantallazos del código comentado en los cuales
 
 ![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo3-2021-2/blob/master/figs/BancoRegistro1.png)
 
-
+Referente a los cambios implementados en los archivos ¨BCDtoSSeg.v¨ y ¨display.v¨ se puede argumentar que fueron menores y además solo se hicieron con el fin de hacer visualización 
