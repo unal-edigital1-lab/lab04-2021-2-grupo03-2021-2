@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jan  8 16:59:26 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : BancoRegistroTop
+Top-level Entity Name : BancoRegistroTop
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 93 / 6,272 ( 1 % )
+    Total combinational functions : 76 / 6,272 ( 1 % )
+    Dedicated logic registers : 55 / 6,272 ( < 1 % )
+Total registers : 55
+Total pins : 30 / 92 ( 33 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

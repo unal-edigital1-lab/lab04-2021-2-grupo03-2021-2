@@ -46,4 +46,4 @@ Como se habia mencionado anteriormente, el módulo "Top" del proyecto es el enca
  //Muestra de funcionamiento de testbench y análisis.
  
  # Video Demostrativo
- //Adjunto video demostrativo mostrando cada función (Lectura, escritura, reseteo)
+ Se adjunta link del video donde se puede evidenciar el correcto funcionamiento de las 3 operaciones básicas solicitadas: Lectura, Escritura y Reseteo: https://youtu.be/VZBKySBjUvA

@@ -19,7 +19,7 @@ wire enable;
 
 // Divisor de frecuecia
 
-assign enable = cfreq[8];
+assign enable = cfreq[14];
 assign led =enable;
 always @(posedge clk) begin
   if(rst==1) begin

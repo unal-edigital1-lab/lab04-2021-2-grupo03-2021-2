@@ -1,25 +1,34 @@
-Analysis & Elaboration report for BancoRegistroTop
-Mon Dec 20 11:55:16 2021
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis report for BancoRegistroTop
+Sat Jan  8 16:59:20 2022
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: BancoRegistro:banco
-  5. Analysis & Elaboration Settings
-  6. Port Connectivity Checks: "BancoRegistro:banco"
-  7. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: BancoRegistro:banco
+ 13. Port Connectivity Checks: "BancoRegistro:banco"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,57 +46,31 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Dec 20 11:55:16 2021       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan  8 16:59:20 2022       ;
+; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; BancoRegistroTop                            ;
 ; Top-level Entity Name              ; BancoRegistroTop                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 96                                          ;
+;     Total combinational functions  ; 76                                          ;
+;     Dedicated logic registers      ; 55                                          ;
+; Total registers                    ; 55                                          ;
+; Total pins                         ; 30                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BancoRegistro:banco ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; BIT_ADDR       ; 3     ; Signed Integer                          ;
-; BIT_DATO       ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6E22C8        ;                    ;
 ; Top-level entity name                                            ; BancoRegistroTop   ; BancoRegistroTop   ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -168,6 +151,159 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
+; Reg.txt                          ; yes             ; User File              ; C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt  ;         ;
+; ../src/display.v                 ; yes             ; User Verilog HDL File  ; C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v          ;         ;
+; ../src/BCDtoSSeg.v               ; yes             ; User Verilog HDL File  ; C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BCDtoSSeg.v        ;         ;
+; ../src/BancoRegistro.v           ; yes             ; User Verilog HDL File  ; C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistro.v    ;         ;
+; ../src/BancoRegistroTop.v        ; yes             ; User Verilog HDL File  ; C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 96        ;
+;                                             ;           ;
+; Total combinational functions               ; 76        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 38        ;
+;     -- 3 input functions                    ; 11        ;
+;     -- <=2 input functions                  ; 27        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 62        ;
+;     -- arithmetic mode                      ; 14        ;
+;                                             ;           ;
+; Total registers                             ; 55        ;
+;     -- Dedicated logic registers            ; 55        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 30        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 47        ;
+; Total fan-out                               ; 436       ;
+; Average fan-out                             ; 2.28      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name      ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+------------------+--------------+
+; |BancoRegistroTop           ; 76 (0)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |BancoRegistroTop                                     ; BancoRegistroTop ; work         ;
+;    |BancoRegistro:banco|    ; 26 (26)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistroTop|BancoRegistro:banco                 ; BancoRegistro    ; work         ;
+;    |display:display|        ; 50 (43)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistroTop|display:display                     ; display          ; work         ;
+;       |BCDtoSSeg:bcdtosseg| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistroTop|display:display|BCDtoSSeg:bcdtosseg ; BCDtoSSeg        ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; display:display|an[2,3]                ; Stuck at VCC due to stuck port data_in ;
+; display:display|cfreq[15..26]          ; Lost fanout                            ;
+; Total Number of Removed Registers = 14 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 55    ;
+; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; BancoRegistro:banco|breg[2][0]          ; 1       ;
+; BancoRegistro:banco|breg[4][0]          ; 1       ;
+; BancoRegistro:banco|breg[3][1]          ; 2       ;
+; BancoRegistro:banco|breg[0][1]          ; 1       ;
+; BancoRegistro:banco|breg[6][1]          ; 1       ;
+; BancoRegistro:banco|breg[2][2]          ; 1       ;
+; BancoRegistro:banco|breg[5][2]          ; 2       ;
+; BancoRegistro:banco|breg[6][2]          ; 1       ;
+; BancoRegistro:banco|breg[4][2]          ; 1       ;
+; BancoRegistro:banco|breg[2][3]          ; 1       ;
+; BancoRegistro:banco|breg[0][3]          ; 1       ;
+; BancoRegistro:banco|breg[7][3]          ; 2       ;
+; Total number of inverted registers = 12 ;         ;
++-----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[0][0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[1][0] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[3][0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[4][3] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[5][3] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[6][0] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[7][2] ;
+; 17:1               ; 4 bits    ; 44 LEs        ; 20 LEs               ; 24 LEs                 ; Yes        ; |BancoRegistroTop|display:display|bcd[3]         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[0][3] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[2][0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[4][0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BancoRegistroTop|BancoRegistro:banco|breg[6][1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BancoRegistro:banco ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; BIT_ADDR       ; 3     ; Signed Integer                          ;
+; BIT_DATO       ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "BancoRegistro:banco"                                                                                                                                                              ;
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -178,40 +314,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 30                          ;
+; cycloneiii_ff         ; 55                          ;
+;     ENA               ; 32                          ;
+;     SCLR              ; 17                          ;
+;     plain             ; 6                           ;
+; cycloneiii_lcell_comb ; 78                          ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 14                          ;
+;     normal            ; 64                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 38                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.28                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Dec 20 11:55:09 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BancoRegistro -c BancoRegistroTop --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Sat Jan  8 16:59:08 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BancoRegistro -c BancoRegistroTop
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /digital/lab04-2021-2-grupo03-2021-2/src/testbench.v
-    Info (12023): Found entity 1: TestBench File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/TestBench.v Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file /digital/lab04-2021-2-grupo03-2021-2/src/display.v
-    Info (12023): Found entity 1: display File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /digital/lab04-2021-2-grupo03-2021-2/src/bcdtosseg.v
-    Info (12023): Found entity 1: BCDtoSSeg File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/BCDtoSSeg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /digital/lab04-2021-2-grupo03-2021-2/src/bancoregistro.v
-    Info (12023): Found entity 1: BancoRegistro File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistro.v Line: 21
-Info (12021): Found 1 design units, including 1 entities, in source file /digital/lab04-2021-2-grupo03-2021-2/src/bancoregistrotop.v
-    Info (12023): Found entity 1: BancoRegistroTop File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at display.v(23): created implicit net for "led" File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v Line: 23
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/diego/documents/github/lab04-2021-2-grupo03-2021-2/src/testbench.v
+    Info (12023): Found entity 1: TestBench File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/TestBench.v Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file /users/diego/documents/github/lab04-2021-2-grupo03-2021-2/src/display.v
+    Info (12023): Found entity 1: display File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/diego/documents/github/lab04-2021-2-grupo03-2021-2/src/bcdtosseg.v
+    Info (12023): Found entity 1: BCDtoSSeg File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BCDtoSSeg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/diego/documents/github/lab04-2021-2-grupo03-2021-2/src/bancoregistro.v
+    Info (12023): Found entity 1: BancoRegistro File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistro.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file /users/diego/documents/github/lab04-2021-2-grupo03-2021-2/src/bancoregistrotop.v
+    Info (12023): Found entity 1: BancoRegistroTop File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at display.v(23): created implicit net for "led" File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v Line: 23
 Info (12127): Elaborating entity "BancoRegistroTop" for the top level hierarchy
-Info (12128): Elaborating entity "BancoRegistro" for hierarchy "BancoRegistro:banco" File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 15
-Warning (10230): Verilog HDL assignment warning at BancoRegistro.v(59): truncated value with size 32 to match size of target (4) File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistro.v Line: 59
-Info (12128): Elaborating entity "display" for hierarchy "display:display" File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 17
-Warning (10036): Verilog HDL or VHDL warning at display.v(23): object "led" assigned a value but never read File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v Line: 23
-Warning (10230): Verilog HDL assignment warning at display.v(28): truncated value with size 32 to match size of target (27) File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v Line: 28
-Warning (10230): Verilog HDL assignment warning at display.v(38): truncated value with size 32 to match size of target (2) File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v Line: 38
-Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:display|BCDtoSSeg:bcdtosseg" File: C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v Line: 15
+Info (12128): Elaborating entity "BancoRegistro" for hierarchy "BancoRegistro:banco" File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 15
+Info (12128): Elaborating entity "display" for hierarchy "display:display" File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 17
+Warning (10036): Verilog HDL or VHDL warning at display.v(23): object "led" assigned a value but never read File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v Line: 23
+Warning (10230): Verilog HDL assignment warning at display.v(28): truncated value with size 32 to match size of target (27) File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v Line: 28
+Warning (10230): Verilog HDL assignment warning at display.v(38): truncated value with size 32 to match size of target (2) File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v Line: 38
+Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:display|BCDtoSSeg:bcdtosseg" File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/display.v Line: 15
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4693 megabytes
-    Info: Processing ended: Mon Dec 20 11:55:16 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "an[2]" is stuck at VCC File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 3
+    Warning (13410): Pin "an[3]" is stuck at VCC File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 3
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 12 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "addrRa[3]" File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 4
+    Warning (15610): No output dependent on input pin "addrRb[3]" File: C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v Line: 5
+Info (21057): Implemented 134 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 104 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4744 megabytes
+    Info: Processing ended: Sat Jan  8 16:59:20 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 

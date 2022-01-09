@@ -43,20 +43,21 @@ localparam datRST=4;
   
 //configiración del banco de registro 
 reg [BIT_DATO-1: 0] breg [NREG-1:0];
-
+reg [BIT_DATO-1: 0] save [NREG-1:0];
 
 assign  datOutRa = breg[addrRa];
 assign  datOutRb = breg[addrRb];
 integer i;
-initial begin
-	$readmemh("C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",breg);
-end
 
+initial begin
+	$readmemh("C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",breg);
+	$readmemh("C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",save);
+end
 
 always @(posedge clk) begin
 	if(rst==1)
 		for(i=0; i<NREG;i=i+1) begin
-			breg[i] <= datRST;
+			breg[i] <= save[i];
 		end
 	else if (RegWrite == 1)
      breg[addrW] <= datW;
