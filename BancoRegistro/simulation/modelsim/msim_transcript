@@ -12,59 +12,59 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src {C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:24 on Dec 20,2021
+# Start time: 09:01:15 on Jan 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src" C:/Digital/lab04-2021-2-grupo03-2021-2/src/display.v 
 # -- Compiling module display
 # 
 # Top level modules:
 # 	display
-# End time: 11:55:24 on Dec 20,2021, Elapsed time: 0:00:00
+# End time: 09:01:15 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src {C:/Digital/lab04-2021-2-grupo03-2021-2/src/BCDtoSSeg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:24 on Dec 20,2021
+# Start time: 09:01:15 on Jan 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src" C:/Digital/lab04-2021-2-grupo03-2021-2/src/BCDtoSSeg.v 
 # -- Compiling module BCDtoSSeg
 # 
 # Top level modules:
 # 	BCDtoSSeg
-# End time: 11:55:24 on Dec 20,2021, Elapsed time: 0:00:00
+# End time: 09:01:15 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src {C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:24 on Dec 20,2021
+# Start time: 09:01:16 on Jan 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src" C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistroTop.v 
 # -- Compiling module BancoRegistroTop
 # 
 # Top level modules:
 # 	BancoRegistroTop
-# End time: 11:55:25 on Dec 20,2021, Elapsed time: 0:00:01
+# End time: 09:01:16 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src {C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistro.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:25 on Dec 20,2021
+# Start time: 09:01:16 on Jan 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/src" C:/Digital/lab04-2021-2-grupo03-2021-2/src/BancoRegistro.v 
 # -- Compiling module BancoRegistro
 # 
 # Top level modules:
 # 	BancoRegistro
-# End time: 11:55:25 on Dec 20,2021, Elapsed time: 0:00:00
+# End time: 09:01:16 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/../src {C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/../src/TestBench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:25 on Dec 20,2021
+# Start time: 09:01:16 on Jan 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/../src" C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/../src/TestBench.v 
 # -- Compiling module TestBench
 # 
 # Top level modules:
 # 	TestBench
-# End time: 11:55:25 on Dec 20,2021, Elapsed time: 0:00:00
+# End time: 09:01:17 on Jan 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 11:55:25 on Dec 20,2021
+# Start time: 09:01:17 on Jan 12,2022
 # Loading work.TestBench
 # Loading work.BancoRegistroTop
 # Loading work.BancoRegistro
@@ -82,11 +82,15 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Santiago Suarez  Hostname: LAPTOP-4MJGDG0U  ProcessID: 20444
-#           Attempting to use alternate WLF file "./wlftz50g4h".
+#           Attempting to use alternate WLF file "./wlfti7x0ff".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftz50g4h
+#           Using alternate file: ./wlfti7x0ff
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# Break key hit
+# Break in Module TestBench at C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/../src/TestBench.v line 92
+# End time: 09:07:37 on Jan 12,2022, Elapsed time: 0:06:20
+# Errors: 0, Warnings: 6

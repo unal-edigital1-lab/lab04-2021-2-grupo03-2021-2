@@ -12,9 +12,9 @@ module BancoRegistroTop(
 	wire [3:0] datOutRa;
 	wire [3:0] datOutRb;
 	
-	BancoRegistro banco(.addrRa(~addrRa),.addrRb(~addrRb),.datOutRa(datOutRa),.datOutRb(datOutRb),.addrW(addrW),.datW(datW),.RegWrite(RegWrite),.clk(clk),.rst(rst));
+	BancoRegistro banco(.addrRa(addrRa),.addrRb(addrRb),.datOutRa(datOutRa),.datOutRb(datOutRb),.addrW(addrW),.datW(datW),.RegWrite(RegWrite),.clk(clk),.rst(rst));
 
-	display display(.numA(datOutRb),.numB(datOutRa),.clk(clk),.sseg(sseg),.an(an),.rst(rst));
+	display display(.numA(datOutRa),.numB(datOutRb),.clk(clk),.sseg(sseg),.an(an),.rst(rst));
 	
 	endmodule
 

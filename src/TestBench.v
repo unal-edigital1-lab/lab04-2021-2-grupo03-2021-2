@@ -64,23 +64,28 @@ module TestBench;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		// Reset
-//		rst=1;
-//		#25;
-//		rst=0;
-//		#25;
+	
       for (addrRa = 0; addrRa < 4; addrRa = addrRa + 1) begin
 		//Lectura registros
 			#5000 addrRb=addrRa+4;
 	
 		end
 		// Escritura
-//		#5000
-//		RegWrite=1;		
-//		addrW=7;
-//		for(i=0; i<9;i=i+1) begin
-//		#5000 datW=i;
-//		end
+		#5000
+		// Se activa la escritura
+		RegWrite=1;
+		//Se indica la direccion de escritura
+		addrW=7;
+		for(i=0; i<9;i=i+1) begin
+		#5000 datW=i;
+		end
+		
+	   // Reset
+		#1000
+		rst=1;
+		#25;
+		rst=0;
+		#25;
 		
 	 end
 	 

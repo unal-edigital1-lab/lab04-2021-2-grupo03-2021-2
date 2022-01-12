@@ -50,8 +50,8 @@ assign  datOutRb = breg[addrRb];
 integer i;
 
 initial begin
-	$readmemh("C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",breg);
-	$readmemh("C:/Users/diego/Documents/GitHub/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",save);
+	$readmemh("C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",breg);
+	$readmemh("C:/Digital/lab04-2021-2-grupo03-2021-2/BancoRegistro/Reg.txt",save);
 end
 
 always @(posedge clk) begin
