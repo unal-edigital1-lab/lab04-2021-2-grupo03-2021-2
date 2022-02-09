@@ -42,14 +42,16 @@ Como se habia mencionado anteriormente, el módulo "Top" del proyecto es el enca
 ![Fig2](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/Esquema.png)
 ## Archivo de memoria
 El archivo de memoria creado contiene 8 registros escritos en hexadecimal, como se muestra a continuación:
-`A
+```
+A
 0
 D
 2
 5
 4
 6
-8`
+8
+```
 ## Resultados del TestBench, incluyendo muestra de funcionamiento de Precarga.
  Con el fin de verificar el correcto funcionamiento del programa diseñado se simulo, usando el codigo a continuación.
  ![Fig1](https://github.com/unal-edigital1-lab/lab04-2021-2-grupo03-2021-2/blob/master/figs/TestBench.png)
